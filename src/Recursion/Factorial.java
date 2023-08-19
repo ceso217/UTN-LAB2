@@ -30,3 +30,4 @@ public class Factorial {
         return result;
     }
 }
+    //por algún motivo solo me dan correctamente los resultados de los factoriales hasta el 12, del 13 en adelante salen mal los números pero no sé porque
