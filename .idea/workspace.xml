@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f18f78a2-d877-4427-9e5c-7542e23ce7cd" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Recursion/SumatoriaRecur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LAB2/Recursion/Division.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LAB2/Recursion/Division.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Recursion/DivRecursión.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Recursion/Division.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Recursion/Division.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
