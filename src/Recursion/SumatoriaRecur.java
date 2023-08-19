@@ -2,28 +2,20 @@ package Recursion;
 
 import java.util.Scanner;
 
-public class DivRecursión {
+public class SumatoriaRecur {
     public static void main(String[] args) {
-        int cont=0,aux=0,cont2=0;
-        float dendo, sor;
+        int nro=0;
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Ingrese un dividendo y el divisor: ");
-        dendo=scanner.nextInt();
-        sor=scanner.nextInt();
-        System.out.println(restaDiv(dendo,sor,cont,cont2,aux));;
-
+        System.out.println("Ingrese un número: ");
+        nro=scanner.nextInt();  // ingreso por teclado del valor
+        System.out.println(sumatoria (nro)); // llamada de la función
     }
-    public static float restaDiv (float dendo, float sor,int cont, int cont2,int aux){
-        float decimal=0;
-        if (dendo>=sor){
-            cont++;
-            return restaDiv(dendo-sor,sor,cont,cont2,aux);
+    public static int sumatoria (int nro) { //esta función recursiva suma nro más nro menos 1 hasta que este (nro-1) sea igual a 1 por ende returna 1 y se van resolviendo las sumas sucesivamente
+        int result;
+        if(nro>1){
+            return nro+sumatoria(nro-1);
         } else {
-            if(aux==0){
-                aux++;
-                decimal=restaDiv(dendo*10,sor,cont2,cont,aux)/10;
-            }
-            return cont+decimal;
+            return 1;
         }
     }
 }
