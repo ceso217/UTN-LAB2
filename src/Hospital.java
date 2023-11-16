@@ -165,7 +165,6 @@ class ListaPaciente{
                 scanner.nextLine();
             }
         }
-
     }
 
     public void verHistorialDeEventos(int dni){
