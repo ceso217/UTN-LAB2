@@ -10,7 +10,7 @@ public class Hoteles {
     public static void main(String[] args) {
         int opcion = 0;
 
-        nombreHotel("C:\\Users\\Ceso\\Desktop\\UTN-LAB2\\src\\EjerciciosParcialLAB\\nombreHotel.txt"); // conviene usar 'File.separator' en lugar de las barras para asegurarse que se ejecute correctamente en otros sistemas operativos, si se hace esto hay que asignarle la path a un String para poder concatenar el 'File.separator'
+        nombreHotel("C:\\Users\\baron\\Desktop\\UTN-LAB2\\src\\EjerciciosParcialLAB\\nombreHotel.txt"); // conviene usar 'File.separator' en lugar de las barras para asegurarse que se ejecute correctamente en otros sistemas operativos, si se hace esto hay que asignarle la path a un String para poder concatenar el 'File.separator'
 
         Scanner scanner = new Scanner(System.in);
         ListaHabitaciones lista = new ListaHabitaciones();
@@ -42,10 +42,11 @@ public class Hoteles {
                     lista.cancelarHabitacion(scanner.nextInt());
                     break;
                 case 4:
-                    lista.guardarReservasEnArchivo("C:\\Users\\Ceso\\Desktop\\UTN-LAB2\\reservas.dat");
+                    lista.guardarReservasEnArchivo("C:\\Users\\baron\\Desktop\\UTN-LAB2\\src\\NuevaPracticaLAB\\reservas.dat");
                     break;
                 case 5:
-                    lista = ListaHabitaciones.cargarReservasDesdeArchivo("C:\\Users\\Ceso\\Desktop\\UTN-LAB2\\reservas.dat");
+                    lista = ListaHabitaciones.cargarReservasDesdeArchivo("C:\\Users\\baron\\Desktop\\UTN-LAB2\\src\\NuevaPracticaLAB\\reservas.dat");
+                    break;
                 case 6:
                     System.out.println("Gracias por elegirnos!");
                     break;
@@ -134,7 +135,7 @@ class Habitacion implements mostrarInformacion,Serializable{
 }
 
 class ListaHabitaciones implements mostrarInformacion, Serializable{
-    ArrayList <Habitacion> listaHabitaciones;
+    private ArrayList <Habitacion> listaHabitaciones;
 
     public ListaHabitaciones(){
         listaHabitaciones = new ArrayList<>();
